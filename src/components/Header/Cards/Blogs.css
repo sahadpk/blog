@@ -1,0 +1,37 @@
+/* .sectionone{
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+.blogs{
+   display: flex;
+   padding: 20px;
+   overflow-x: scroll;
+   overflow-y: hidden;
+
+     
+}
+.blogs::-webkit-scrollbar{
+    display: none;
+}
+.blog{
+    max-height: 250px;
+    margin-right: 10px;
+}
+.cardmain{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+} */
+.content{
+    background-color: aqua;
+    height: 400px;
+    color: black;
+    text-align: center;
+    font-size: 48px;
+    padding-top: 100px;
+}
+.card{
+    margin-top: 20px;
+    display: flex !important;
+}
