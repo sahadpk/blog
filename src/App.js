@@ -16,7 +16,7 @@ function App() {
       <main className='py-3'>
         <Container>
           <Routes>
-            <Route path='/blog/:name' element={<BlogCard />} />
+            <Route path='/blog/:_id' element={<BlogCard />} />
             <Route path='/' element={<Blogs />} />
           </Routes>
         </Container>

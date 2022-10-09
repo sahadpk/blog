@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 import {ListGroup,Image,Row,Col} from "react-bootstrap";
 import axios from "axios";
-import {useParams} from 'react-router-dom'
+import {useParams,useLocation} from 'react-router-dom'
 
 
-function BlogCard() {
+function BlogCard(props) {
   const [blogs, setBlogs] = useState([]);
   const [blog, setBlog] = useState([]);
-    const {name} =useParams()
+  const location = useLocation();
+  const imageUrl = location.state?.imageUrl;
+  const {_id} =useParams()
   useEffect(() => {
     getBlogs();
   }, [blog]);
   const getBlogs = async () => {
     try {
       const { data } = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=300be0372ce64ead840346911752051c`
+        `https://newsonic-backend.herokuapp.com/api/posts/fetch-home`
       );
-      console.log("first", data.articles);
-      setBlogs(data.articles);
+      console.log("first", data.posts);
+      setBlogs(data.posts);
       const datas =blogs.filter(item=>{
-        return item.source.name === name
+        return item._id=== _id
       })
       setBlog(datas[0])
-      console.log("datas",datas[0].description)
+      console.log("datas",datas[0].newsBody)
   
     } catch (error) {}
   };
@@ -30,19 +32,19 @@ function BlogCard() {
     <>
     {blog ?(<Row>
             <Col md={6}>
-              <Image src={blog.urlToImage} alt={blog.name} fluid />
+              <Image src={imageUrl} alt={blog._id} fluid />
             </Col>
             <Col md={3}>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
-                  <h4 style={{color:"red"}}>{name}</h4>
-                  <h6 style={{color:"blue"}}>{blog.author}</h6>
+                  <h4 style={{color:"red"}}>{_id}</h4>
+                  <h6 style={{color:"blue"}}>{blog.newsHead}</h6>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  Title: {blog.title}
+                  category: {blog.category}
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  Description: {blog.description}
+                  news: {blog.newsBody}
                 </ListGroup.Item>
               
               </ListGroup>
@@ -50,10 +52,10 @@ function BlogCard() {
             <Col md={3}>
             <ListGroup variant='flush'>
             <ListGroup.Item>
-                  Content: {blog.content}
+                  channel: {blog.channelId}
                 </ListGroup.Item>
             <ListGroup.Item style={{color:"blue"}}>
-                  Published at: {blog.publishedAt}
+                  post: {blog.postDate}
                 </ListGroup.Item>
               </ListGroup>
             </Col>

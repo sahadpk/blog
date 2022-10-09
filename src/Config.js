@@ -1,0 +1,13 @@
+export const imageArray=['https://media.istockphoto.com/photos/online-news-article-on-tablet-screen-electronic-newspaper-or-magazine-picture-id1158778963?b=1&k=20&m=1158778963&s=170667a&w=0&h=uhSKfI4gzNMf14fTA3Y9grxJezfQPVbyvPU7xNKEY7Q=','https://image.shutterstock.com/image-photo/breaking-news-media-announcement-social-260nw-435654307.jpg'
+,'https://media.istockphoto.com/photos/sample-online-news-website-on-tablet-picture-id1049719114?k=20&m=1049719114&s=612x612&w=0&h=7_D9HbI4LqhISG30FxWcFueDtiVe3WpZw1BbFDz7VS4=','https://colorlib.com/wp/wp-content/uploads/sites/2/10_best_news_website_design.jpg',
+'https://siteinspire.s3.us-east-1.amazonaws.com/screengrabs/images/000/013/385/small.jpg','https://colorlib.com/wp/wp-content/uploads/sites/2/magazine-wordpress-theme.jpg',
+'https://upload.wikimedia.org/wikipedia/en/7/76/BBC_News_Online_responsive_design.png','https://cdn.dribbble.com/users/1126935/screenshots/14700802/media/65b8129e9ea54c9fc32525c90fd891df.png?compress=1&resize=400x300',
+'https://colorlib.com/wp/wp-content/uploads/sites/2/9_newspaper-website-design.jpg','https://www.telefon-ads.info/wp-content/uploads/2021/05/13-washington-post.jpg',
+'https://www.dreamgrow.com/wp-content/uploads/2012/09/digg1.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREvIFe2qtvkhqCYDUSZOrz5hcyOsyA0tveDA&usqp=CAU',
+'https://images-platform.99static.com//snaGI2AFTHS8dIbpyEL2x3iTOd8=/0x0:1367x1367/fit-in/500x500/99designs-contests-attachments/112/112099/attachment_112099995','https://afthemes.com/blog/wp-content/uploads/2019/03/news-sites.jpg',
+'https://image.cnbcfm.com/api/v1/image/107129343-16649211511664921149-25824889208-1080pnbcnews.jpg?v=1664921431','https://miro.medium.com/max/1400/1*oe8qSf8liNLIgPq5CYTFPg.png',
+'https://storage.googleapis.com/afs-prod/media/c90ef36d99c44e54850c43ad4012daa2/400.jpeg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKsCobubowDysLzf_FVhO0zT84vF7VXr2Y4g&usqp=CAU',
+'https://images.news18.com/ibnlive/uploads/2022/04/google-twitter-amazon111-16511571413x2.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhIEYKJ1Z00eYkoBE2qVLOeBhdogFrRX0T_JUfhNl5NA9ORAdgEYJoG9URpBKMPZKd5c&usqp=CAU',
+'https://images.ctfassets.net/pjshm78m9jt4/1Ta0rQFbofBL31Pzpbc7JB/eb85d412fc38314d2f06e520590b0a67/Amazon4.jpeg','https://www.informalnewz.com/wp-content/uploads/2022/08/Netflix-amazon-prime-video-disney-hotstar-.jpg']
+
+                  

@@ -34,4 +34,6 @@
 .card{
     margin-top: 20px;
     display: flex !important;
+    background-color: black;
+    columns: white;
 }

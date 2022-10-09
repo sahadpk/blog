@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Blogs.css";
 
 import axios from "axios";
+import { imageArray } from "../../../Config";
 // import BlogCard from "../BlogCards/BlogCard";
 
 const Blogs = () => {
@@ -15,10 +16,10 @@ const Blogs = () => {
   const getBlogs = async () => {
     try {
       const { data } = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=us&apiKey=300be0372ce64ead840346911752051c`
+        `https://newsonic-backend.herokuapp.com/api/posts/fetch-home`
       );
-      console.log("first", data.articles);
-      setBlogs(data.articles);
+      console.log("first", data.posts);
+      setBlogs(data.posts);
     } catch (error) {}
   };
   return (
@@ -31,15 +32,16 @@ const Blogs = () => {
           
                     <Row xs={4} md={4} lg={12} xl={12} className="g-12">
                     {blogs &&
-              blogs.map((blog) => {
+              blogs.map((blog,index) => {
                 return (
                         <Col>
                           <Card>
-                          <Card.Img variant="top" src={blog.urlToImage} />
+                          <Card.Img variant="top" src={imageArray[index]} />
                             <Card.Body>
-                                      <Card.Title>{blog.source.name}</Card.Title>
+                                      <Card.Title>{blog.newsHead}</Card.Title>
                                       <Link
-                                        to={`/blog/${blog.source.name}`}
+                                        to={`/blog/${blog._id}`}
+                                        state={{ imageUrl: imageArray[index] }}
                                         className="btn btn-primary"
                                         style={{width:"200px"}}
                                       >
