@@ -52,7 +52,6 @@ function BlogCard(props) {
             <Col md={6}>
               <Image src={imageUrl} alt={blog._id} fluid />
             </Col>
-            <div>
             <Col md={3}>
 
               <ListGroup variant='flush'>
@@ -63,13 +62,9 @@ function BlogCard(props) {
                 <ListGroup.Item>
                   category: {blog.category}
                 </ListGroup.Item>
-                <ListGroup.Item>
-                  news: {blog.newsBody}
-                </ListGroup.Item>
-              
+               
               </ListGroup>
             </Col>
-            </div>
             <Col md={3}>
             <ListGroup variant='flush'>
             <ListGroup.Item>
@@ -80,7 +75,15 @@ function BlogCard(props) {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
+            <div className="newssbody">
+              <hr />
+                <ListGroup.Item>
+                  news: {blog.newsBody}
+                </ListGroup.Item>
+                </div>
           </Row>)}
+       
+      
     </>
   )
   
