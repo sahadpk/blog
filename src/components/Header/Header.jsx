@@ -15,6 +15,8 @@ function NavScrollExample() {
          <a href="#articles">Articles</a>
          <a href="#sports">Sports</a>
          <a href="#politics">Politics</a>
+         <a href="#news">News</a>
+         <a href="#blog">Blog</a>
         </div>
       </div>
    </div>
