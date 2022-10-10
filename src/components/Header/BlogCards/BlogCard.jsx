@@ -52,7 +52,9 @@ function BlogCard(props) {
             <Col md={6}>
               <Image src={imageUrl} alt={blog._id} fluid />
             </Col>
+            <div>
             <Col md={3}>
+
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <h4 style={{color:"red"}}>{_id}</h4>
@@ -67,6 +69,7 @@ function BlogCard(props) {
               
               </ListGroup>
             </Col>
+            </div>
             <Col md={3}>
             <ListGroup variant='flush'>
             <ListGroup.Item>

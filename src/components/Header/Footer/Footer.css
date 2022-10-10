@@ -1,5 +1,19 @@
 .footer{
-    background-color: black;
+    background-color: rgb(235, 229, 229);
     height: 300px;
     width: 100%;
+}
+.contentsoffooter{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.linkfooter a{
+    padding-top: 200px;
+    color: black !important;
+    padding-left: 150px !important;
+    text-decoration: none !important; 
+}
+.linkfooter{
+    padding-top: 50px;
 }

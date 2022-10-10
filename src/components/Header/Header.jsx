@@ -5,12 +5,16 @@
 import "./Header.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function NavScrollExample() {
   return (
    <div className='section-one'>
       <div className='navbar'>
         <div className="links">
-     
+         <a href="#Home">Home</a>
+         <a href="#articles">Articles</a>
+         <a href="#sports">Sports</a>
+         <a href="#politics">Politics</a>
         </div>
       </div>
    </div>

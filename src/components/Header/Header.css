@@ -19,3 +19,8 @@
 .me-auto-nav{
     color: #fff !important;
 }
+.links a{
+    color: #fff !important;
+    padding-left: 150px !important;
+    text-decoration: none !important;
+}

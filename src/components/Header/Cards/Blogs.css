@@ -36,9 +36,23 @@
     display: flex !important;
     background-color: black;
     columns: white;
+    height: 400px !important;
 }
 /* .buttonone{
     width: 800px;
     background-color: black;
     color: white;
 } */
+.card-title{
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 18px !important;
+}
+.card-img-top{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

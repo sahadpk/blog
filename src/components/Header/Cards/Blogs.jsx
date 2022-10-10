@@ -22,9 +22,9 @@ const Blogs = () => {
   return (
     <>
       <div className="cardmain">
-        <div className="content">
+        {/* <div className="content">
            <h2>Blog Articles</h2>
-        </div>
+        </div> */}
       
           
                     <Row xs={4} md={4} lg={12} xl={12} className="g-12">
@@ -40,9 +40,9 @@ const Blogs = () => {
                                         to={`/blog/${blog._id}`}
                                         state={{ imageUrl: imageArray[index] }}
                                         className="btn btn-dark"
-                                        style={{width:"200px",color:"white",borderRadius:"120px"}}
+                                        style={{width:"200px",color:"white",borderRadius:"120px", display:"block"}}
                                       >
-                                        Click
+                                        Continue reading
                                       </Link>{" "}
                                     </Card.Body>
                           </Card>
