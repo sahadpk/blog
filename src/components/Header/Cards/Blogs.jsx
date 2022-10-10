@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card,} from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import { useParams } from "react-router-dom";
 import "./Blogs.css";
-
 import axios from "axios";
 import { imageArray } from "../../../Config";
-// import BlogCard from "../BlogCards/BlogCard";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -42,8 +39,8 @@ const Blogs = () => {
                                       <Link
                                         to={`/blog/${blog._id}`}
                                         state={{ imageUrl: imageArray[index] }}
-                                        className="btn btn-primary"
-                                        style={{width:"200px"}}
+                                        className="btn btn-dark"
+                                        style={{width:"200px",color:"white",borderRadius:"120px"}}
                                       >
                                         Click
                                       </Link>{" "}

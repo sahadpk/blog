@@ -11,6 +11,8 @@ function BlogCard(props) {
   const imageUrl = location.state?.imageUrl;
   const {_id} =useParams()
   useEffect(() => {
+    // fetch("https://newsonic-backend.herokuapp.com/api/posts/fetch-home").then(response=>response.json())
+    // .then(response=>console.log(response))
     getBlogs();
   }, [blog]);
   const getBlogs = async () => {
