@@ -56,8 +56,8 @@ function BlogCard(props) {
 
               <ListGroup variant='flush'>
                 <ListGroup.Item>
-                  <h4 style={{color:"red"}}>{_id}</h4>
-                  <h6 style={{color:"blue"}}>{blog.newsHead}</h6>
+                  {/* <h4 style={{color:"red"}}>{_id}</h4> */}
+                  <h4 style={{color:"blue"}}>{blog.newsHead}</h4>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   category: {blog.category}
