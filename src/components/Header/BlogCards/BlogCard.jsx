@@ -70,7 +70,7 @@ function BlogCard(props) {
             <ListGroup.Item>
                   channel: {blog.channelId}
                 </ListGroup.Item>
-            <ListGroup.Item style={{color:"blue"}}>
+            <ListGroup.Item style={{color:"red"}}>
                   post: {blog.postDate}
                 </ListGroup.Item>
               </ListGroup>
