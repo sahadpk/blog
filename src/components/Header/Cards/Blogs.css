@@ -56,3 +56,10 @@
     width: 100%;
     object-fit: cover;
 }
+.header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
