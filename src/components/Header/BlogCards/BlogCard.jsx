@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, CSSProperties } from "react";
 import {ListGroup,Image,Row,Col} from "react-bootstrap";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 import {useParams,useLocation} from 'react-router-dom'
 
 
 function BlogCard(props) {
+  const [post,setPost]= useState(null);
+  const[loader,setLoader]=useState(false)
   const [blogs, setBlogs] = useState([]);
   const [blog, setBlog] = useState([]);
   const location = useLocation();
   const imageUrl = location.state?.imageUrl;
   const {_id} =useParams()
   useEffect(() => {
-    // fetch("https://newsonic-backend.herokuapp.com/api/posts/fetch-home").then(response=>response.json())
-    // .then(response=>console.log(response))
+    setLoader(true)
+    fetch("https://newsonic-backend.herokuapp.com/api/posts/fetch-home").then(response=>response.json())
+    .then(response=>{
+      const{blogs}=response
+      setPost(blogs)
+      setLoader(false)
+    })
     getBlogs();
-  }, [blog]);
+  }, []);
   const getBlogs = async () => {
     try {
       const { data } = await axios.get(
@@ -22,7 +30,7 @@ function BlogCard(props) {
       );
       console.log("first", data.posts);
       setBlogs(data.posts);
-      const datas =blogs.filter(item=>{
+      const datas =data.posts.filter(item=>{
         return item._id=== _id
       })
       setBlog(datas[0])
@@ -32,7 +40,15 @@ function BlogCard(props) {
   };
   return (
     <>
-    {blog ?(<Row>
+    {loader? <ClipLoader
+        // color={color}
+        // loading={loading}
+        // cssOverride={override}
+        size={50}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />: blog&&(<Row>
+            
             <Col md={6}>
               <Image src={imageUrl} alt={blog._id} fluid />
             </Col>
@@ -61,7 +77,7 @@ function BlogCard(props) {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-          </Row>):"no  data"}
+          </Row>)}
     </>
   )
   
