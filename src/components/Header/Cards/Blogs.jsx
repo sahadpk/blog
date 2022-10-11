@@ -42,8 +42,8 @@ const Blogs = () => {
                                       <Link
                                         to={`/blog/${blog._id}`}
                                         state={{ imageUrl: imageArray[index] }}
-                                        className="btn btn-dark"
-                                        style={{width:"200px",color:"white",borderRadius:"120px", display:"block"}}
+                                        className="buttonmain btn btn"
+                                  
                                       >
                                         Continue reading
                                       </Link>{" "}

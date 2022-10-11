@@ -1,4 +1,4 @@
-import React, { useEffect, useState, CSSProperties } from "react";
+import React, { useEffect, useState} from "react";
 import {ListGroup,Image,Row,Col} from "react-bootstrap";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";

@@ -63,3 +63,14 @@
     width: 100%;
     margin-top: 50px;
 }
+.buttonmain{
+    width: 200px;
+    color: black !important;
+    border-radius: 120px !important;
+    display: block;
+    border: 2px solid blue !important;
+}
+.buttonmain:hover{
+    background-color:#0247FE !important;
+    color: white !important;
+}
