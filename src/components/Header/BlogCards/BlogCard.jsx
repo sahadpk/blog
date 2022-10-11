@@ -60,11 +60,11 @@ function BlogCard(props) {
                   <h4 style={{color:"blue"}}>{blog.newsHead}</h4>
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  category: {blog.category}
+                  CATEGORY: {blog.category}
                 </ListGroup.Item>
                         
             <ListGroup.Item style={{color:"red"}}>
-                  post: {blog.postDate}
+                  POST DATE: {blog.postDate}
                 </ListGroup.Item>
               </ListGroup>
             </Col>
