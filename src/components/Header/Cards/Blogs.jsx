@@ -22,9 +22,6 @@ const Blogs = () => {
   return (
     <>
       <div className="cardmain">
-        {/* <div className="content">
-           <h2>Blog Articles</h2>
-        </div> */}
             <div className="header">
          <h1>India vs Western Australia XI T20 World Cup practice match Highlights : India beat WA XI by 13 runs</h1>
          <h5>IND vs WA XI, T20 World Cup Practice Match Highlights: India beat Western Australia by 13 runs.</h5>
