@@ -62,23 +62,24 @@ function BlogCard(props) {
                 <ListGroup.Item>
                   category: {blog.category}
                 </ListGroup.Item>
-               
-              </ListGroup>
-            </Col>
-            <Col md={3}>
-            <ListGroup variant='flush'>
-            <ListGroup.Item>
-                  channel: {blog.channelId}
-                </ListGroup.Item>
+                        
             <ListGroup.Item style={{color:"red"}}>
                   post: {blog.postDate}
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-            <div className="newssbody">
+            <Col md={3}>
+            <ListGroup variant='flush'>
+            {/* <ListGroup.Item>
+                  channel: {blog.channelId}
+                </ListGroup.Item> */}
+        
+              </ListGroup>
+            </Col>
+            <div className="newssbody" style={{textAlign:"justify"}}>
               <hr />
                 <ListGroup.Item>
-                  news: {blog.newsBody}
+                  NEWS: {blog.newsBody}
                 </ListGroup.Item>
                 </div>
           </Row>)}

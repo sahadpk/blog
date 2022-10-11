@@ -30,7 +30,7 @@ const Blogs = () => {
          <h5>IND vs WA XI, T20 World Cup Practice Match Highlights: India beat Western Australia by 13 runs.</h5>
       </div>
           
-                    <Row xs={4} md={4} lg={12} xl={12} className="g-12">
+                    <Row xs={12} md={4} lg={12} xl={12} className="g-12">
                     {blogs &&
               blogs.map((blog,index) => {
                 return (
