@@ -1,0 +1,53 @@
+.createpostpage{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+}
+.createpostone{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.createpostone h2{
+    text-align: center;
+}
+.createpostone label{
+    font-size: 25px;
+}
+.createpostone .inputgroup{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.inputgroup input,
+.inputgroup textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+.inputgroup input{
+    height: 40px;
+}
+.inputgroup textarea{
+    height: 150px;
+}
+.createpostone button{
+   margin-top: 20px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+}
+input,
+textarea {
+    margin-top: 5px;
+}
