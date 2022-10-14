@@ -12,6 +12,7 @@ import Login from './components/Header/Login/Login';
 import {signOut} from 'firebase/auth'
 
 import {auth}from './components/Header/fireBase-config'
+import NewBlog from './components/Header/Newblogs/NewBlog';
 // import Slider from './components/Header/Slider/Slider';
 
 function App() {
@@ -31,12 +32,13 @@ function App() {
     <Router>
       <nav>
         <Link to="/">Home</Link>
-        
+        <Link to="/newBlogs">New Blogs</Link>
         {!isAuth ? (
         <Link to="/login">Login</Link>
          ) : (
           <>
           <Link to="/createpost">Create Post</Link>
+          
         <button className='logout-btn' onClick={signUserOut}>Log Out</button>
           </>
            )}
@@ -46,7 +48,8 @@ function App() {
         <Container>
           <Routes>
             <Route path='/blog/:_id' element={<BlogCard />} />
-            <Route path='/' element={<Blogs />} />     
+            <Route path='/' element={<Blogs />} />    
+            <Route path='/NewBlogs' element={<NewBlog  isAuth={isAuth}/>} />   
             <Route path='/createpost' element={<CreatePost isAuth={isAuth}/>} />
             <Route path='/login' element={<Login  setIsAuth={setIsAuth}/>} />
           </Routes>
