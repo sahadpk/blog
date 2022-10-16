@@ -50,6 +50,10 @@ const Blogs = () => {
                          );
                         })}
                     </Row>
+                     <div>
+                     <Link to="/newBlogs"
+                     className="buttontnew btn btn">Go To New Blogs</Link>
+                     </div>
 
       </div>
 

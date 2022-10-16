@@ -2,21 +2,25 @@
     width: 100%;
     height: calc(100vh - 80px);
     display: grid;
-    place-items: center;
-}
+    place-items: start;
+    
+    background-image: url(https://themify.me/wp-content/uploads/2018/11/home-video-overlay-image.jpg);
+}   
 .createpostone{
     width: 500px;
     height: auto;
-    padding: 20px;
-    background-color: black;
-    border-radius: 15px;
+    padding: 30px;
+    background-image: url(https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/mobileservices/themes/video/huawei-themes-ringtones-07.jpg);
+    border-radius: 25px;
+    margin-top: 30px;
     color: white;
     display: flex;
     flex-direction: column;
 
 }
 .createpostone h2{
-    text-align: center;
+    text-align:start;
+    font-style: italic;
 }
 .createpostone label{
     font-size: 25px;
@@ -32,22 +36,93 @@
   border: none;
   border-radius: 2px;
   padding: 5px;
+  color: white;
 }
 .inputgroup input{
     height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 .inputgroup textarea{
     height: 150px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 .createpostone button{
    margin-top: 20px;
    height: 40px;
    border: none;
-   border-radius: 5px;
+   border-radius: 25px;
    cursor: pointer;
    font-size: 18px;
+   color: white;
+   background-color: transparent;
+   border: 1px solid white;
 }
 input,
 textarea {
     margin-top: 5px;
 }
+/* .mainimage{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    margin-top: -20rem;
+    margin-left: 70%;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) rotateZ(-10deg);
+    animation: ror 20s linear infinite;
+
+}
+@keyframes ror{
+  50%{
+    transform: rotateX(30deg);
+  }  
+  50%{
+    transform: rotateX(-30deg);
+  }  
+}
+.imageone img{
+
+    height: 200px;
+    width: 320px;
+    position: absolute;
+    border-radius: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 10s linear infinite;
+      
+}
+@keyframes rotate{
+  from{
+
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+.imageone img:nth-child(1){
+    transform: rotateY(60deg) translateZ(300px);
+}
+.imageone img:nth-child(2){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.imageone img:nth-child(3){
+    transform: rotateY(180deg) translateZ(300px);
+}
+.imageone img:nth-child(4){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.imageone img:nth-child(5){
+    transform: rotateY(300deg) translateZ(300px);
+}
+.imageone img:nth-child(6){
+    transform: rotateY(360deg) translateZ(300px);
+} */
+/* .imageone img:hover{
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+} */

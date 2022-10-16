@@ -9,14 +9,15 @@ function NewBlog({isAuth}) {
     const blogsCollectionRef= collection(db,"blogs")
 
 
-     useEffect(()=>{
-       const getPosts=async()=>{
+    useEffect(() => {
+      const getPosts=async()=>{
         const data= await getDocs(blogsCollectionRef);
         setBlogList(data.docs.map((doc)=>({...doc.data(), id: doc.id})))
        };
 
        getPosts()
-     });
+    }, [])
+    
 
      const deleteBlog = async(id)=>{
         const blogDoc=doc(db,"posts",id)

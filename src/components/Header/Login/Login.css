@@ -5,16 +5,17 @@
    flex-direction: column;
    justify-content: center;
    align-items: center; 
+   background-image: url(https://static.vecteezy.com/system/resources/previews/002/128/416/non_2x/soft-pink-and-blue-geometric-background-free-vector.jpg);
 }
 .loginpage p{
-    font-size: 30px;
+    font-size: 50px;
 }
 .login-with-google-btn{
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
     padding: 5px 16px 12px 42px;
     border: none;
-    border-radius: 3px;
+    border-radius: 15px;
     box-shadow: 0 -1px 0 rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.25);
     color: #757575;
     font-size: 25px;

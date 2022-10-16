@@ -50,3 +50,16 @@
     background-color:#0247FE !important;
     color: white !important;
 }
+.buttontnew{
+    margin-top: 20px;
+    width: 200px;
+    color: black !important;
+    border-radius: 120px !important;
+    display: block;
+    border: 1px solid blue !important;
+    margin-left: 57rem;
+}
+.buttontnew:hover{
+    background-color:#0247FE !important;
+    color: white !important; 
+}
