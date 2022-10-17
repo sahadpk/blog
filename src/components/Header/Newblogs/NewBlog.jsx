@@ -21,7 +21,9 @@ function NewBlog({isAuth}) {
 
      const deleteBlog = async(id)=>{
         const blogDoc=doc(db,"posts",id)
-        await deleteDoc(blogDoc)
+        console.log(blogDoc)
+       await deleteDoc(blogDoc)
+
      }
 
   return (
@@ -40,7 +42,7 @@ function NewBlog({isAuth}) {
              <div className='blogText'>
                {post.blogText}
             </div>
-            {/* <h4>{post.author.name}</h4> */}
+            <h6>{post.author.name}</h6>
           </div>
         })}
     </div>

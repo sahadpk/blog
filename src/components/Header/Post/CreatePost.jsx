@@ -20,7 +20,7 @@ function CreatePost({isAuth}) {
     const createPost=async ()=>{
        await addDoc(blogsCollectionRef, {title,blogText,author:{name: auth.currentUser.displayName , id: auth.currentUser.uid }
     });
-    navigate("/newblog")
+    navigate("/newblogs")
     };
 
     useEffect(()=>{
